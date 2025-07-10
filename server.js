@@ -5,16 +5,18 @@ import expressEjsLayout from 'express-ejs-layouts'
 
 
 
+//dotenv config
+dotenv.config();
+
+const PORT = process.env.PORT || 3000
 
 // initialize express app
 const app = express()
 
 
-//dotenv config
-dotenv.config();
+
 
 // env variable 
-const PORT = process.env.PORT || 3000;
 
 // middlewares
 app.use(express.json());
@@ -36,8 +38,7 @@ app.use(pageRouter)
 
 
 // listen
-app.listen(5050, ()=>{
-    console.log(`Server is running on port ${PORT}`);
+app.listen(PORT, ()=>{
+    console.log(`Server is running on port ${PORT}`)
 })
-
 
