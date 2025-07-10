@@ -1,6 +1,8 @@
 import express from 'express';
 import dotenv from 'dotenv';
-import pageRouter from './routes/pageRoutes.js'
+import pageRouter from './routes/pageRoutes.js';
+import expressEjsLayout from 'express-ejs-layouts'
+
 
 
 
@@ -25,6 +27,9 @@ app.use(express.static('public'));
 //ejs set
 app.set('view engine', 'ejs')
 
+
+// setup ejs layouts
+app.use(expressEjsLayout)
 
 // routing set
 app.use(pageRouter)
