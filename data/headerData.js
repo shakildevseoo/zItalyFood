@@ -12,7 +12,7 @@ export const headerData = {
         {name : "Home", href : "/" , bgClass : "colour-1"},
         {name : "Menu", href : "/menu", bgClass : "colour-2"},
         {name : "Location", href : "/location", bgClass : "colour-3"},
-        {name : "Blog", href : "/blog", bgClass : "colour-4"},
+        {name : "Blog", href : "/archive", bgClass : "colour-4"},
         {name : "Reservation", href : "/reservation", bgClass : "colour-5"},
         {name : "Our Staff", href : "/staff", bgClass : "colour-6"},
         {name : "News", href : "news", bgClass : "colour-7"},
