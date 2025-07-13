@@ -12,8 +12,29 @@ Author URI: https://www.zerotheme.com/
 
 .zerogrid .f-right{float: right!important;}
 .zerogrid .f-left{float: left!important;}
+.zerogrid .logo{
+	width: 114px;
+	height: auto;
+}
+.zerogrid .testimonial-parent{
+	font-size: 18px;
 
-.zerogrid .row{}
+	h5{
+		font-size: 20px;
+	}
+}
+.zerogrid .testimonialImage{
+	width: 120px;
+	height: auto;
+	border: none;
+	object-fit: cover;
+	outline: none;
+
+}
+.zerogrid .homeFood {
+	width: 300px;
+}
+
 .zerogrid .row:before,.row:after { content: '\0020'; display: block; overflow: hidden; visibility: hidden; width: 0; height: 0; }
 .zerogrid .row:after{clear: both; }
 .zerogrid .row{zoom: 1;}

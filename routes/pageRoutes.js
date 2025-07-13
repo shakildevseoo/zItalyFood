@@ -1,5 +1,6 @@
 import express from 'express';
 import {loadHomepage, loadArchivePage, loadGalleryPage, loadMenuPage, loadLocationPage, loadReservationPage,loadNewsPage, loadStaffPage} from '../controllers/pageControllers.js'
+import {loadLayoutPage} from '../controllers/pageControllers.js'
 
 //initialize router
 const router = express.Router();
@@ -12,6 +13,7 @@ router.get('/menu', loadMenuPage)
 router.get('/news', loadNewsPage)
 router.get('/reservation', loadReservationPage)
 router.get('/staff', loadStaffPage)
+router.get('/layout', loadLayoutPage)
 
 
 export default router;

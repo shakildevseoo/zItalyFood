@@ -1,5 +1,11 @@
+import {staffData,} from '../data/staffData.js'
+import {homepageData} from '../data/homepageData.js'
+
+
 export const loadHomepage = (req, res)=>{
-    res.render('index')
+    res.render('index', {
+        homepageData
+    })
 }
 
 export const loadArchivePage = (req, res)=>{
@@ -21,9 +27,14 @@ export const loadNewsPage = (req, res)=>{
     res.render('news')
 }
 export const loadStaffPage = (req, res)=>{
-    res.render('staff')
+    res.render('staff', {
+        staffData,
+    })
 }
 
+export const loadLayoutPage = (req, res)=>{
+res.render('layout')
+}
 
 
 

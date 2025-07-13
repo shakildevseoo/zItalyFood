@@ -2,6 +2,9 @@ import express from 'express';
 import dotenv from 'dotenv';
 import pageRouter from './routes/pageRoutes.js';
 import expressEjsLayout from 'express-ejs-layouts'
+import {footerData} from './data/footerData.js'
+import {headerData} from './data/headerData.js'
+
 
 
 
@@ -33,12 +36,21 @@ app.set('view engine', 'ejs')
 // setup ejs layouts
 app.use(expressEjsLayout)
 
+//global footer data
+app.use((req, res, next)=>{
+      res.locals.headerData = headerData;
+    res.locals.footerData = footerData
+    next()
+})
+
+
+
 // routing set
 app.use(pageRouter)
 
 
 // listen
 app.listen(PORT, ()=>{
-    console.log(`Server is running on port ${PORT}`)
+    console.log(`Server is running on port ${PORT} `)
 })
 

@@ -1,7 +1,4 @@
-/*
-Zerotheme.com | Free Html5 Responsive Templates
-Author URI: https://www.zerotheme.com/
-*/
+
 @import url(https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911);
 /* ---------------------------------------------------------------------------- */
 /* ------------------------------------Reset----------------------------------- */
@@ -105,7 +102,7 @@ header{background: #E4000D url(../images/bg-header.png) repeat;padding:15px 0;}
 
 
 /* ---content-box--- */
-.content-box {padding-bottom: 30px; position: relative;}
+.content-box {padding-bottom: 7px; position: relative;}
 .content-box .box-item {}
 .content-box .header {text-align: center;margin-top: 30px; padding: 5px 30px; }
 .content-box .header h2{font-size: 40px; letter-spacing: 3px;}
@@ -195,17 +192,13 @@ footer  img{border: 1px solid #bbb;display: inline-block;padding: 5px;float:left
 
 .copyright{margin-bottom: 30px;}
 .copyright .wrapper{padding: 10px 30px;position: relative;}
-.copyright .wrapper:after{
-	content:'';
-	background:url(../images/bg-2.png) repeat-x;
-	height:12px;
-	width:100%;
-	left:0;
-	bottom:-12px;
-	position:absolute;
+
+
+.copyright ul{
+	display: flex;
+	gap: 20px;
+	margin-top: -27px;
 }
-.copyright ul.quick-link li {display: inline-block;margin-right: 10px;}
-.copyright ul.quick-link li a:hover{text-decoration: underline;}
 
 /* ---------------------------------------------------------------------------- */
 /* -------------------------------------Post----------------------------------- */
@@ -347,8 +340,9 @@ a.button.bt2 {}
 }
 .zoom-container img {
 	display: block;
-	width: 100%;
-	height: auto;
+	width: 400px;
+	height: 150px;
+	object-fit: cover;
 	-webkit-transition: all .5s ease; /* Safari and Chrome */
     -moz-transition: all .5s ease; /* Firefox */
     -ms-transition: all .5s ease; /* IE 9 */
