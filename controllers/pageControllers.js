@@ -4,6 +4,8 @@ import {menuData, menuNav} from '../data/menuData.js'
 import {galleryData, galleryNav} from '../data/galleryData.js';
 import {commonSlideData} from '../data/commonSlidData.js'
 import {locationData} from "../data/locationData.js"
+import {reservationData} from "../data/reservationData.js"
+
 
 
 export const loadHomepage = (req, res)=>{
@@ -35,7 +37,9 @@ export const loadLocationPage = (req, res)=>{
     })
 }
 export const loadReservationPage = (req, res)=>{
-    res.render('reservation')
+    res.render('reservation', {
+        reservationData
+    })
 }
 export const loadNewsPage = (req, res)=>{
     res.render('news',{

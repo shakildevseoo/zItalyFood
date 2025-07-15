@@ -2,8 +2,9 @@
 	<div class="wrap-container zerogrid">
 		<div class="crumbs">
 			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="reservation.html">Reservation</a></li>
+				<% reservationData.nav.forEach((nav)=>{%>
+				<li><a href="<%= nav.href %>"><%= nav.navName %></a></li>
+				<% })  %>
 			</ul>
 		</div>
 		<div id="main-content">
@@ -11,12 +12,12 @@
 				<div class="row">
 					<div class="col-1-3">
 						<div class="wrap-col">
-							<h3>Complete the Submission Form</h3>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p><br/>
-							<h3>Or Just Make a Call</h3>
-							<p>+6221 888 888 90 <br>
-								+6221 888 88891</p>
-							<p>info@yourdomain.com</p>
+							<h3><%= reservationData.submissionData.type %></h3>
+							<p><%= reservationData.submissionData.content %></p><br/>
+							<h3><%= reservationData.call.type %></h3>
+							<p><%= reservationData.call.callNum1 %> </p>
+							<p><%= reservationData.call.callNum2 %> </p>
+							<p><%= reservationData.call.email %></p>
 						</div>
 					</div>
 					<div class="col-2-3">
