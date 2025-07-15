@@ -5,6 +5,8 @@ import {galleryData, galleryNav} from '../data/galleryData.js';
 import {commonSlideData} from '../data/commonSlidData.js'
 import {locationData} from "../data/locationData.js"
 import {reservationData} from "../data/reservationData.js"
+import {newsData} from "../data/newsData.js"
+
 
 
 
@@ -43,6 +45,7 @@ export const loadReservationPage = (req, res)=>{
 }
 export const loadNewsPage = (req, res)=>{
     res.render('news',{
+      newsData,
         commonSlideData
     })
 }
