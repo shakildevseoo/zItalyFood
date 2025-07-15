@@ -1,6 +1,7 @@
 import {staffData,} from '../data/staffData.js'
 import {homepageData} from '../data/homepageData.js'
 import {menuData, menuNav} from '../data/menuData.js'
+import {galleryData, galleryNav} from '../data/galleryData.js'
 
 
 export const loadHomepage = (req, res)=>{
@@ -13,7 +14,10 @@ export const loadArchivePage = (req, res)=>{
     res.render('archive')
 }
 export const loadGalleryPage = (req, res)=>{
-    res.render('gallery')
+    res.render('gallery', {
+        galleryData,
+        galleryNav
+    })
 }
 export const loadMenuPage = (req, res)=>{
     res.render('menu', {
