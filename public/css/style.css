@@ -273,10 +273,20 @@ footer  img{border: 1px solid #bbb;display: inline-block;padding: 5px;float:left
 /* ---------------------------------------------------------------------------- */
 /* -------------------------------------Button--------------------------------- */
 /* ---------------------------------------------------------------------------- */
+
+.btn{
+
+	
+	border-radius: 10px;
+	outline: none;
+	border: none;
+	color: white;
+}
+
 a.button{
 	cursor: pointer;
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 15px;
+	font-size: 20px;
 	border:1px solid #ffffff; 
 	display: inline-block;
 	text-decoration: none;
@@ -289,7 +299,10 @@ a.button{
 	-khtml-border-radius: 4px;
 	border-radius: 4px;
 }
-a.button:hover{opacity: 0.9;}
+
+a.button:hover{
+	background-color: #000;
+}
 
 a.button.bt1 {}
 a.button.bt2 {}

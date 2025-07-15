@@ -6,6 +6,7 @@ import {commonSlideData} from '../data/commonSlidData.js'
 import {locationData} from "../data/locationData.js"
 import {reservationData} from "../data/reservationData.js"
 import {newsData} from "../data/newsData.js"
+import {archiveData} from "../data/archiveData.js"
 
 
 
@@ -18,6 +19,7 @@ export const loadHomepage = (req, res)=>{
 
 export const loadArchivePage = (req, res)=>{
     res.render('archive', {
+        archiveData,
         commonSlideData
     })
 }
