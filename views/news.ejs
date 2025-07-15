@@ -73,8 +73,10 @@
 						<h5><%=commonSlideData.about.title %></h5>
 					</div>
 					<div class="wid-content">
-						<img src="<%=commonSlideData.about.image.path %>" alt="<%=commonSlideData.about.image.alterText %>"/>
-						<p><%=commonSlideData.about.description %></p>
+						<a href="<%=commonSlideData.about.image.href %>">
+							<img src="<%=commonSlideData.about.image.path %>" alt="<%=commonSlideData.about.image.alterText %>"/>
+						</a>
+						<p><a href="<%=commonSlideData.about.span.href %>"><span><%=commonSlideData.about.span.keyword %></span></a><%=commonSlideData.about.description %></p>
 					</div>
 				</div>
 				<!---- Start Widget ---->

@@ -6,8 +6,12 @@ export const commonSlideData = {
             alterText : "ZfoodItally",
             href : "/"
         },
-        description : `zItalyFood – the best restaurant in New York!
-We bring you the authentic taste of Italy with fresh ingredients, traditional recipes, and a warm, cozy atmosphere. Whether you're craving classic pasta, wood-fired pizza, or delicious desserts, zItalyFood is your go-to destination for an unforgettable dining experience.`
+        description : ` – the best restaurant in New York!
+We bring you the authentic taste of Italy with fresh ingredients, traditional recipes, and a warm, cozy atmosphere. Whether you're craving classic pasta, wood-fired pizza, or delicious desserts, zItalyFood is your go-to destination for an unforgettable dining experience.`,
+ span :{
+    keyword : "zItalyFood",
+    href : "/"
+ }
     },
 
     latestPosts : {
