@@ -1,4 +1,4 @@
-import {staffData,} from '../data/staffData.js'
+import {staffData,simpleStaffMenu} from '../data/staffData.js'
 import {homepageData} from '../data/homepageData.js'
 import {menuData, menuNav} from '../data/menuData.js'
 import {galleryData, galleryNav} from '../data/galleryData.js';
@@ -51,7 +51,8 @@ export const loadNewsPage = (req, res)=>{
 }
 export const loadStaffPage = (req, res)=>{
     res.render('staff', {
-        staffData,
+        simpleStaffMenu,
+        staffData
     })
 }
 

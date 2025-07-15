@@ -45,4 +45,8 @@ export const staffData = [
     
 ]
 
+export const simpleStaffMenu = [
+    {navName : "Home", href : "/"},
+    {navName : "Staff", href : "/staff"}
+]
 
