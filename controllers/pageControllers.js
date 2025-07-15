@@ -1,7 +1,8 @@
 import {staffData,} from '../data/staffData.js'
 import {homepageData} from '../data/homepageData.js'
 import {menuData, menuNav} from '../data/menuData.js'
-import {galleryData, galleryNav} from '../data/galleryData.js'
+import {galleryData, galleryNav} from '../data/galleryData.js';
+import {commonSlideData} from '../data/commonSlidData.js'
 
 
 export const loadHomepage = (req, res)=>{
@@ -11,7 +12,9 @@ export const loadHomepage = (req, res)=>{
 }
 
 export const loadArchivePage = (req, res)=>{
-    res.render('archive')
+    res.render('archive', {
+        commonSlideData
+    })
 }
 export const loadGalleryPage = (req, res)=>{
     res.render('gallery', {
@@ -32,7 +35,9 @@ export const loadReservationPage = (req, res)=>{
     res.render('reservation')
 }
 export const loadNewsPage = (req, res)=>{
-    res.render('news')
+    res.render('news',{
+        commonSlideData
+    })
 }
 export const loadStaffPage = (req, res)=>{
     res.render('staff', {

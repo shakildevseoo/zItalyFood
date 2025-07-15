@@ -117,7 +117,7 @@ export const menuData = [
       {
         name: "Spring Rolls",
         price: "$20 - $26",
-        image: "https://res.cloudinary.com/djqpbf3x8/image/upload/v1752372481/8_nbblmw.jpg",
+        image: "https://res.cloudinary.com/djqpbf3x8/image/upload/v1752377401/Steak_pohpty.png",
         href : "#",
         alterText : "Spring Rolls"
       },
