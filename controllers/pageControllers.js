@@ -3,6 +3,7 @@ import {homepageData} from '../data/homepageData.js'
 import {menuData, menuNav} from '../data/menuData.js'
 import {galleryData, galleryNav} from '../data/galleryData.js';
 import {commonSlideData} from '../data/commonSlidData.js'
+import {locationData} from "../data/locationData.js"
 
 
 export const loadHomepage = (req, res)=>{
@@ -29,7 +30,9 @@ export const loadMenuPage = (req, res)=>{
     })
 }
 export const loadLocationPage = (req, res)=>{
-    res.render('location')
+    res.render('location', {
+        locationData
+    })
 }
 export const loadReservationPage = (req, res)=>{
     res.render('reservation')
